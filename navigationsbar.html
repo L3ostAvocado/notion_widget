@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			font-family: 'Playfair Display', serif;
+			padding: 8px;
+			text-align: center;
+			margin: 7px auto;
+			width: fit-content;
+		}
+
+		.navMenu a {
+			color: #000000;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+			padding: 6px;
+		}
+
+		.background {
+			background-color: #785d4e;
+		}
+
+		.border {
+			border: 1.5px solid #000000;
+
+		}
+
+		.navMenu a:hover {
+
+			color: #a86d5d;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navMenu  border background">
+		<a id="home" onclick="navigate(https://www.notion.so/HOME-HUB-2f3e880a4b9f42dbbcb7bccd8f9dd40c?pvs=4)" href="#"> <i class="fa-solid fa-house"></i> Home</a>
+		<a id="FAU-campo" onclick="navigate(https://www.campo.fau.de/qisserver/pages/cs/sys/portal/hisinoneStartPage.faces)" href="#"> <i class="fa-brands fa-uniregistry"></i> FAU-campo</a>
+		<a id="studon" onclick="navigate(https://www.studon.fau.de/studon/ilias.php?baseClass=ilrepositorygui&reloadpublic=1&cmd=frameset&ref_id=1)" href="#"> <i class="fa-solid fa-chalkboard-user"></i> studon</a>
+		<a id="Study-plan" onclick="navigate(https://www.notion.so/Study-Plan-e7de4baf5676434b9b0c377c240516a2?pvs=4)" href="#"> <i class="fa-brands fa-leanpub"></i> Study-plan</a>
+		<a id="Exams+Results" onclick="navigate(https://www.notion.so/Exams-Results-4aefb55b6ee64b20bdc3ae13b9ed83ce?pvs=4)" href="#"> <i class="fa-solid fa-graduation-cap"></i> Exams+Results</a>
+		
+
+
+
+	</nav>
+
+
+	<script>
+
+		let direction = "vertical";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == 'home')
+				window.open("https://home.com", '_parent').focus();
+			else if (id == 'FAU-campo')
+				window.open("https://FAU-campo.com", '_parent').focus();
+			else if (id == 'studon')
+				window.open("https://studon.com", '_parent').focus();
+			else if (id == 'Study-plan')
+				window.open("https://Study-plan.com", '_parent').focus();
+			else if (id == 'Exams+Results')
+				window.open("https://Exams+Results.com", '_parent').focus();
+		
+		}
+	</script>
+
+
+</body>
+
+</html>
